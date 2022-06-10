@@ -28,7 +28,7 @@ Un thème vide est installé avec comme base `classy`. Voir le README du thème 
 
 ### Globales
 
-**Vous devez créer une branche** à votre nom et travailler dessus.
+**Vous devez cloner ce repo** et nous envoyer soit un lien vers votre propre repo, soit un package si vous n'avez pas de compte GitHub.
 
 **Vous pouvez utiliser composer pour installer ce que vous voulez.**
 
