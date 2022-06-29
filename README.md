@@ -54,7 +54,7 @@ Un thème vide est installé avec comme base `classy`. Voir le README du thème 
 * à l'aide d'un **QueueWorker**.
 
 ## Rendu attendu
-Votre branche pushée sur le repository, avec :
+**Vous devez cloner ce repo** et nous envoyer soit un lien vers votre propre repo, soit un package avec :
 
 * votre configuration exportée ;
 * **et/ou** un dump de base de données ;
