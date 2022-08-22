@@ -1,16 +1,16 @@
-uuid: d04afb4c-d5df-4c4f-9f6d-8d1ae8f31cfa
+uuid: b2d194a0-9b2e-4442-b6f6-7b4a9f25e16a
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - test_drupal
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
+id: test_drupal_breadcrumbs
+theme: test_drupal
+region: header
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

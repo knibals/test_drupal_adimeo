@@ -1,13 +1,13 @@
-uuid: e1c5bdc2-f6ca-413a-9678-890b50ddd48c
+uuid: 39038785-eed5-42fb-b59a-ea9c8d659a5e
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - test_drupal
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+id: test_drupal_local_actions
+theme: test_drupal
 region: content
 weight: -20
 provider: null

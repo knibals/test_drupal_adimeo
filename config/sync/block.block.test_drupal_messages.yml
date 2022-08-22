@@ -1,16 +1,16 @@
-uuid: cb7c55ca-1405-41f4-afdc-523d6a07f960
+uuid: 13a9b892-67a5-4010-bae1-b6f36e1a8fba
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - test_drupal
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
-region: highlighted
+id: test_drupal_messages
+theme: test_drupal
+region: header
 weight: 0
 provider: null
 plugin: system_messages_block
