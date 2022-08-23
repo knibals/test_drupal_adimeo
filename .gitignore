@@ -18,3 +18,9 @@
 /.idea/
 ._.DS_Store
 .DS_Store
+
+*.zip
+/mariadb-init
+/mariadb
+/web/themes/custom/test_drupal/assets/css/*.map
+/web/themes/custom/test_drupal/node_modules
