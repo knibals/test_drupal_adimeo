@@ -1,0 +1,28 @@
+uuid: 0d4b7533-ccca-44c5-9c84-493529d7a4c6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - agenda
+    - node
+  theme:
+    - test_drupal
+id: similarevents
+theme: test_drupal
+region: header
+weight: 0
+provider: null
+plugin: similar_events
+settings:
+  id: similar_events
+  label: 'Similar Events'
+  label_display: visible
+  provider: agenda
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event

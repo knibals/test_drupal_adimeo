@@ -1,0 +1,7 @@
+name: Agenda
+type: module
+description: Affiche des évènements
+package: Adimeo
+core_version_requirement: ^9 || ^10
+dependencies:
+  - taxonomy
