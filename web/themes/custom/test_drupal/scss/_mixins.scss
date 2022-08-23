@@ -1,0 +1,93 @@
+// stylelint-disable declaration-no-important
+
+// Hide content visually while keeping it accessible to assistive technologies
+//
+// See: https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+// See: https://kittygiraudel.com/2016/10/13/css-hide-and-seek/
+//
+//
+// copied from https://github.com/twbs/bootstrap/blob/main/scss/mixins/_visually-hidden.scss
+//
+@mixin visually-hidden() {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+// Use to only display content when it's focused, or one of its child elements is focused
+// (i.e. when focus is within the element/container that the class was applied to)
+//
+// Useful for "Skip to main content" links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+
+@mixin visually-hidden-focusable() {
+    &:not(:focus):not(:focus-within) {
+        @include visually-hidden();
+    }
+}
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+
+@mixin img-fluid {
+    // Part 1: Set a maximum relative to the parent
+    max-width: 100%;
+    // Part 2: Override the height to auto, otherwise images will be stretched
+    // when setting a width and height attribute on the img element.
+    height: auto;
+}
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+@mixin list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+//
+// Stretched link
+@mixin stretched-link {
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+    }
+}
+
+@mixin reset-text {
+    font-family: system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        "Noto Sans",
+        "Liberation Sans",
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left; // Fallback for where `start` is not supported
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    white-space: normal;
+    word-spacing: normal;
+    line-break: auto;
+}

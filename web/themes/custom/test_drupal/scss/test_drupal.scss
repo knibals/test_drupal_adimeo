@@ -1,0 +1,16 @@
+@import "mixins";
+@import "rfs";
+
+.visually-hidden {
+    @include visually-hidden();
+}
+
+body {
+    @include reset-text();
+    @include font-size(1.25rem);
+}
+
+h1{
+    @include font-size(3rem);
+}
+
