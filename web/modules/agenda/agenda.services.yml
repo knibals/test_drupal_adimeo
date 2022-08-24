@@ -1,0 +1,3 @@
+services:
+  events.manager:
+    class: Drupal\agenda\EventsManager

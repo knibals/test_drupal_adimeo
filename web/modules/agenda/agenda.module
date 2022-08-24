@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function agenda_cron(): void
+{
+    $outdated_events = \Drupal::service('events.manager')->getOutdated();
+
+    $queue = \Drupal::queue('events_unpublisher');
+    $queue->createQueue();
+    $queue->createItem($outdated_events);
+}
