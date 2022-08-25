@@ -9,13 +9,16 @@ nav > ul {
   display: none;
 }
 
-h1 {
-  font-size: calc(1.425rem + 2.1vw);
+#open-lightbox {
+  border: 0 none transparent;
+  padding: 1.25rem 2rem;
+  border-radius: 8px;
+  color: #e0e1dd;
+  background-color: #003248;
 }
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 3rem;
-  }
+#open-lightbox:hover {
+  cursor: pointer;
+  background-color: #000011;
 }
 
 /*# sourceMappingURL=test_drupal.css.map */

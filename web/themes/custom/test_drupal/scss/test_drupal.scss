@@ -9,12 +9,14 @@ nav > ul {
     display: none;
 }
 
-body {
-    @include reset-text();
-    @include font-size(1.25rem);
+#open-lightbox {
+    border: 0 none transparent;
+    padding: 1.25rem 2rem;
+    border-radius: 8px;
+    color: #e0e1dd;
+    background-color: #003248;
+    &:hover {
+        cursor: pointer;
+        background-color: #000011;
+    }
 }
-
-h1{
-    @include font-size(3rem);
-}
-

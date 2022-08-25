@@ -53,4 +53,11 @@ article p {
   }
 }
 
+#open-lightbox {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
 /*# sourceMappingURL=typography.css.map */
