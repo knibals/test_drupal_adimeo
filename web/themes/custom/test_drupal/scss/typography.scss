@@ -1,0 +1,33 @@
+@import "mixins";
+@import "rfs";
+
+body {
+    @include reset-text();
+    @include font-size(18px);
+}
+
+a {
+    color: #003248;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+h1 {
+    @include font-size(3rem);
+}
+
+article p {
+    margin-top: 0;
+}
+
+#block-test-drupal-page-title h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    @include font-size(24px)
+}

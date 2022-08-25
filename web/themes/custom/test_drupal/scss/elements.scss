@@ -1,3 +1,6 @@
-#similars {
-    display: none;
+@import "mixins";
+@import "rfs";
+
+.visually-hidden {
+    @include visually-hidden();
 }

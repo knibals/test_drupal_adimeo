@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+.layout-container {
+    &> main {
+        max-width: 60rem;
+        margin: 4rem auto;
+    }
+    > header {
+        display: flex;
+        justify-content: center;
+        color: #e0e1dd;
+        background-color: #003248;
+        a {
+            color: #e0e1dd;
+        }
+    }
+}
+
+#block-test-drupal-page-title {
+    margin-bottom: 2rem;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+.events-list > li {
+    margin-bottom: 2rem;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 15rem auto;
+    grid-template-rows: repeat(2, auto);
+
+    figure {
+        margin: 0;
+        grid-row: 1 / -1;
+    }
+    &>h2, &>article {
+        grid-column-start: 2;  
+    }
+}
+
+.pager__items{
+    display: flex;
+    .pager__item {
+        border: 1px solid #003248;
+        margin-right: 1rem;
+    }
+    a {
+        color: gray;
+        display: block;
+        padding: .75rem 1.25rem;
+        color: #003248;
+        background-color: #e0e1dd;
+        &:hover {
+            color: #e0e1dd;
+            background-color: #003248;
+        }
+    }
+}

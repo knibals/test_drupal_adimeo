@@ -1,8 +1,12 @@
 @import "mixins";
-@import "rfs";
 
-.visually-hidden {
-    @include visually-hidden();
+nav > ul {
+    margin: 0;
+    @include list-unstyled;
+}
+#similars,
+#block-similarevents h2 {
+    display: none;
 }
 
 body {
