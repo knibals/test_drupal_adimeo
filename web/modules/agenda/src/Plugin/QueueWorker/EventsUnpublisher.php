@@ -2,6 +2,7 @@
 
 namespace Drupal\agenda\Plugin\QueueWorker;
 
+use Drupal\node\Entity\Node;
 use Drupal\Core\Queue\QueueWorkerBase;
 
 /**
@@ -10,7 +11,7 @@ use Drupal\Core\Queue\QueueWorkerBase;
  * @QueueWorker(
  *   id = "events_unpublisher",
  *   title = @Translation("Events unpublisher"),
- *   cron = {"time" = 60}
+ *   cron = {"time" = 10}
  * )
  */
 class EventsUnpublisher extends QueueWorkerBase
@@ -18,10 +19,11 @@ class EventsUnpublisher extends QueueWorkerBase
     /**
      * {@inheritdoc}
      */
-    public function processItem($nodes)
+    public function processItem($events)
     {
-        if (!empty($nodes)) {
-            \Drupal::service('events.manager')->unpublishEvents($nodes);
+        foreach (Node::loadMultiple($events) as $node) {
+            $node->setUnpublished();
+            $node->save();
         }
     }
 }

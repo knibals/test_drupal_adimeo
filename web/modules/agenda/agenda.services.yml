@@ -1,3 +1,4 @@
 services:
   events.manager:
     class: Drupal\agenda\EventsManager
+    arguments: ['@entity_type.manager', '@queue', '@logger.factory']
