@@ -1,0 +1,12 @@
+<div{{ attributes }}>
+  <button id="open-lightbox">Voir les évènements similaires</button>
+  {# <a class="use-ajax" data-dialog-type="modal" href="#similars">Voir les évènements similaires</a> #}
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

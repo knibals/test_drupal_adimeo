@@ -55,7 +55,7 @@ class SimilarEventsBlock extends BlockBase
             '#theme'      => 'item_list',
             '#list_type'  => 'ol',
             '#items'      => $items,
-            '#attributes' => ['class' => 'similar-events'],
+            '#attributes' => ['class' => ['similar-events'], 'id' => 'similars'],
         ];
         return $build;
     }

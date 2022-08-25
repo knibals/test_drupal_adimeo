@@ -1,4 +1,4 @@
-uuid: 0d4b7533-ccca-44c5-9c84-493529d7a4c6
+uuid: ed07e102-7247-4b33-b890-5921751b7b27
 langcode: fr
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - test_drupal
 id: similarevents
 theme: test_drupal
-region: header
+region: content
 weight: 0
 provider: null
 plugin: similar_events

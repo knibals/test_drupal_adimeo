@@ -1,7 +1,15 @@
 main:
   version: 1.x
   css:
+    layout:
+      assets/css/layout.css: {}
     theme:
       assets/css/test_drupal.css: {}
+    base:
+      assets/css/elements.css: {}
+      assets/css/typography.css: {}
   js:
     assets/js/test_drupal.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.dialog.ajax
