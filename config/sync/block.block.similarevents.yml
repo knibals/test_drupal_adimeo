@@ -9,8 +9,8 @@ dependencies:
     - test_drupal
 id: similarevents
 theme: test_drupal
-region: content
-weight: 0
+region: sidebar
+weight: -6
 provider: null
 plugin: similar_events
 settings:

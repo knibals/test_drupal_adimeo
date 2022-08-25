@@ -12,7 +12,8 @@ libraries:
   - test_drupal/main
 
 regions:
+  help: Help
   header: Header
   content: Content
-  sidebar_first: 'Sidebar first'
+  sidebar: Sidebar
   footer: Footer
